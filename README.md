@@ -29,6 +29,7 @@ python chi_square_calculator.py
 ```
 
 这将运行三个预设的示例：
+
 - 骰子公平性检验
 - 遗传比例检验（3:1比例）
 - 自定义期望频数检验
@@ -36,21 +37,25 @@ python chi_square_calculator.py
 ### 2. 命令行参数
 
 #### 等比例期望分布
+
 ```bash
 python chi_square_calculator.py -o 10 15 20 25
 ```
 
 #### 指定期望频数
+
 ```bash
 python chi_square_calculator.py -o 10 15 20 25 -e 12 14 18 26
 ```
 
 #### 指定期望比例
+
 ```bash
 python chi_square_calculator.py -o 45 55 -p 0.5 0.5
 ```
 
 #### 自定义显著性水平
+
 ```bash
 python chi_square_calculator.py -o 20 30 25 15 -a 0.01
 ```
@@ -65,6 +70,7 @@ python chi_square_calculator.py -o 20 30 25 15 -a 0.01
 ## 输出解释
 
 计算器会输出：
+
 - 卡方统计量
 - 自由度
 - p值
@@ -75,12 +81,15 @@ python chi_square_calculator.py -o 20 30 25 15 -a 0.01
 ## 数学原理
 
 ### 卡方统计量计算
+
 χ² = Σ[(观察频数 - 期望频数)² / 期望频数]
 
 ### 自由度计算
+
 df = 类别数 - 1
 
 ### p值计算
+
 使用Wilson-Hilferty近似方法将卡方分布转换为正态分布进行计算。
 
 ## 示例输出
@@ -127,4 +136,4 @@ Category        Observed        Expected        Difference
 
 ## 作者
 
-AI Assistant - 2024
+AI Assistant - 2025

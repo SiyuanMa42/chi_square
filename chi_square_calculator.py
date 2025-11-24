@@ -11,7 +11,7 @@ Special handling for zero expected frequencies:
 - If expected = 0 and observed ≠ 0: chi-square statistic is infinity (reject hypothesis)
 
 Author: AI Assistant
-Date: 2024
+Date: 2025
 """
 
 import math
